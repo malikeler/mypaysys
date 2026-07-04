@@ -1,0 +1,600 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="专业搭建开发马来西亚支付系统,支持DuitNow支付,银行钱包收款,自动监控,团队深耕马来西亚数十年,拥有丰富的行业经验 致力于为您搭建开发出租马来西亚支付系统">
+    <meta name="keywords" content="马来西亚支付系统搭建,马来西亚支付系统,马来西亚第三方支付系统搭建,马来西亚收款系统搭建,马来西亚代收系统搭建">
+    <title>关于我们 | 马来西亚支付系统搭建</title>
+    <link href="css/iconfont.css" type="text/css" rel="stylesheet">
+    <link href="css/public.css" type="text/css" rel="stylesheet">
+    <link href="css/base-v4.1.0.min.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/media.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" sizes="32x32">
+    <script src="js/jquery.min.js"></script>
+    <!-- public end -->
+    <style>
+        .layui-layer-loading .layui-layer-content {
+            height: 60px !important
+        }
+    </style>
+    <link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+</head>
+<!-- body加sticky-body代表，body超出显示 -->
+<body>
+    <!-- ys-page-wrap加act代表导航永远反白 -->
+    <div class="ys-page-wrap inside-main about-page">
+        <!-- 顶部导航 -->
+        <link href="css/privacy.css" type="text/css" rel="stylesheet">
+         <header class="ys-header">
+            <!-- pc顶部导航 -->
+            <div class="ys-hd-pc">
+                <div class="mod-head">
+                    <div class="head-logo ys-imgbox-contain">
+                        <a href="/">
+                            <img src="picture/logo.png" alt="马来西亚支付系统开发搭建出租" loading="lazy">
+                        </a>
+                    </div>
+                    <ul class="head-nav">
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="/" class="head-nav-item-title">首页</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <!-- 一级选中加act和yxnav-active1 -->
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="about.html" class="head-nav-item-title">关于我们</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="bgm.html" class="head-nav-item-title">马来西亚支付</a>
+                                <!-- 下拉 -->
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="bgm.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop01.svg" alt="马来网银支付系统" loading="lazy">
+                                                <p>马来网银支付系统</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="cgm.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop02.svg" alt="马来电子钱包支付系统" loading="lazy">
+                                                <p>马来电子钱包支付系统</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="dms.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop03.svg" alt="马来聚合支付系统" loading="lazy">
+                                                <p>马来聚合支付系统</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="Payment Received Notice.html" class="head-nav-item-title">到账通知</a>
+                                <!-- 下拉 -->
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="API 主动查询" loading="lazy">
+                                                <p>API 主动查询</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="短信通知（SMS）" loading="lazy">
+                                                <p>短信通知（SMS）</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="APP Push 通知" loading="lazy">
+                                                <p>APP Push 通知</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="邮件通知（Email）" loading="lazy">
+                                                <p>邮件通知（Email）</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="news.html" class="head-nav-item-title">支付新闻</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="career.html" class="head-nav-item-title">技术优势</a>
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop04.svg" alt="高并发架构" loading="lazy">
+                                                <p>高并发架构</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="银行级安全防护" loading="lazy">
+                                                <p>银行级安全防护</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="标准API接口" loading="lazy">
+                                                <p>标准API接口</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="灵活定制开发" loading="lazy">
+                                                <p>灵活定制开发</p>
+                                            </a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="head-other">
+                        <div class="head-more">
+                            <a href="https://t.me/ukpaysys" target="_blank" class="head-more-link" rel="nofollow">
+                                <p>联系我们</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> <!-- 主体内容 -->
+        <main class="ys-main">
+            <!-- page start -->
+            <!-- 内页banner区 -->
+            <section class="ys-nybanner">
+                <div class="ys-nyban-img">
+                    <img class="ys-nyban-pc" src="picture/h1bannerpc.png" alt="关于我们" loading="lazy">
+                </div>
+                <div class="ys-nyban-title ys-cont1400 ys-pos-center">
+                    <p class="wow ys-fadeup1">About Us</p>
+                    <h1 class="wow ys-fadeup2">技术驱动稳定可靠高效协作</h1>
+                </div>
+                <!-- 面包屑 -->
+                <div class="mod-bread">
+                    <div class="ys-cont1400">
+                        <ul class="mod-bread-ul">
+                            <li class="mod-bread-ul-li">
+                                <a href="/">首页</a>
+                            </li>
+                            <li class="mod-bread-ul-li">
+                                <a href="" target="">关于我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 内容区 -->
+            <section class="about-main">
+                <div class="ys-cont1400">
+                    <h2 class="about-main-tit std-h2 wow ys-fadeup1">关于我们</h2>
+                    <div class="about-main-text std-word wow ys-fadeup2">
+                        <p>我们专注于马来西亚支付系统开发与技术服务，深入研究本地支付生态及跨境资金流转方案，持续完善系统性能、支付体验和交易安全。团队拥有丰富的马来本地支付渠道对接经验，可根据马来市场不同交易场景，提供稳定、高效的支付系统解决方案。
+                            <br>系统采用高性能分布式架构，支持快速部署、灵活扩容及多渠道聚合管理，可无缝对接银行转账、电子钱包、二维码支付及标准API接口，为企业提供支付系统开发、接口集成、功能定制、系统维护等一站式技术服务，助力商户快速构建稳定、安全的马来西亚支付系统
+                        </p>
+                    </div>
+                    <div class="about-main-below wow ys-fadeup3">
+                        <ul class="about-main-ul">
+                            <li class="about-main-ul-li">
+                                <div class="ys-imgbox-cover">
+                                    <img src="picture/img03.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                </div>
+                            </li>
+                            <li class="about-main-ul-li">
+                                <div class="ys-imgbox-cover">
+                                    <img src="picture/img04.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="about-main-below-ri">
+                            <ul class="ambr-ul">
+                                <li class="about-main-ul-li">
+                                    <div class="ys-imgbox-cover">
+                                        <img src="picture/img03.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                    </div>
+                                </li>
+                                <li class="about-main-ul-li">
+                                    <div class="ys-imgbox-cover">
+                                        <img src="picture/img04.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="ambr-controls">
+                                <div class="arrow-all arrow-prev ys-imgbox-cover">
+                                    <img src="picture/h1_icon_left01.svg" alt="h1_icon_left01.svg" loading="lazy">
+                                    <img src="picture/h1_icon_left02.svg" alt="h1_icon_left02.svg">
+                                </div>
+                                <ul class="ambr-controls-dots slick-dots">
+                                    <li class="on"></li>
+                                    <li class=""></li>
+                                </ul>
+                                <div class="arrow-all arrow-next ys-imgbox-cover">
+                                    <img src="picture/h1_icon_right01.svg" alt="h1_icon_right01.svg" loading="lazy">
+                                    <img src="picture/h1_icon_right02.svg" alt="h1_icon_right02.svg" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-data">
+                <div class="ys-cont1400">
+                    <ul class="about-data-ul wow ys-fadeup1">
+                        <li class="about-data-ul-li">
+                            <div class="adul-cont">
+                                <div class="adul-cont-num"><span class="num-span">技术驱动</span></div>
+                                <div class="adul-cont-text">坚持自主研发，不断优化系统体验</div>
+                            </div>
+                        </li>
+                        <li class="about-data-ul-li">
+                            <div class="adul-cont">
+                                <div class="adul-cont-num"><span class="num-span">稳定可靠</span></div>
+                                <div class="adul-cont-text">持续提升系统稳定性和可用性</div>
+                            </div>
+                        </li>
+                        <li class="about-data-ul-li">
+                            <div class="adul-cont">
+                                <div class="adul-cont-num"><span class="num-span">高效协作</span></div>
+                                <div class="adul-cont-text">快速响应客户需求，提高开发效率。</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="about-cert">
+                <div class="std-move" style="--bg: #fff;"></div>
+                <div class="ys-cont1400">
+                    <div class="about-cert-tit">
+                        <h2 class="std-h2 wow ys-fadeup2">开发搭建马来西亚支付系统<br>适配多种业务场景</h2>
+                        <div class="std-word wow ys-fadeup2">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="about-cert-ri">
+                        <ul class="about-cert-ri-ul wow ys-fadeup3">
+                            <li class="acru-li acru-li1">
+                                <ul class="acru-li-ul">
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/1.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/2.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/3.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/4.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/5.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="acru-li-ul">
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/1.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/2.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/3.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/4.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/5.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="acru-li acru-li2">
+                                <ul class="acru-li-ul">
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/1.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/2.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/3.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/4.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/5.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="acru-li-ul">
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/1.png "alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/2.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/3.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/4.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="ys-imgbox-cover">
+                                            <img src="picture/5.png" alt="开发搭建马来西亚支付系统" loading="lazy">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section class="about-future">
+                <div class="about-future-cont">
+                    <div class="ys-cont1400">
+                        <h2 class="about-future-cont-tit std-h2 wow ys-fadeup2">开发全球支付系统</h2>
+                        <div class="about-develop-top-text std-word wow ys-fadeup2">
+                            <p>无论您需要马来西亚本地支付系统、还是世界其他主流国家的支付系统，我们都可根据业务需求提供专业的开发与部署服务，助力企业快速构建稳定、高效、安全的支付系统</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-future-back wow ys-fadeup3">
+                    <img src="picture/h1background04.png" alt="开发全球支付系统" loading="lazy">
+                </div>
+            </section>
+            <!-- page end -->
+        </main>
+        <!-- 页脚 -->
+        <footer class="ys-footer">
+            <div class="std-move" style="--bg: #072100;"></div>
+            <div class="ys-cont1400">
+                <div class="footer-top">
+                    <a href="">
+                        <img src="picture/logo.png" alt="马来西亚支付系统搭建开发" >
+                    </a>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-center-le">
+                        <ul>
+                            <li><a href="bgm.html">马来西亚支付</a>
+                                <ul>
+                                    <li><a href="bgm.html">马来网银支付系统</a></li>
+                                    <li><a href="cgm.html">马来电子钱包支付系统</a></li>
+                                    <li><a href="dms.html">马来聚合支付方案</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Payment Received Notice.html">到账通知</a>
+                                <ul>
+                                    <li><a href="Payment Received Notice.html">Webhook 回调通知</a></li>
+                                    <li><a href="Payment Received Notice.html">API 主动查询</a></li>
+                                    <li><a href="Payment Received Notice.html">短信通知（SMS）</a></li>
+                                    <li><a href="Payment Received Notice.html">APP Push 通知</a></li>
+                                    <li><a href="Payment Received Notice.html">邮件通知（Email）</a></li>
+                                    <li><a href="Payment Received Notice.html">后台实时订单同步</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="news.html">支付新闻</a></li>
+                            <li><a href="career.html">技术优势</a>
+                                <ul>
+                                    <li><a href="career.html">高并发架构</a></li>
+                                    <li><a href="career.html">银行级安全防护</a></li>
+                                    <li><a href="career.html">标准API接口</a></li>
+                                    <li><a href="career.html">灵活定制开发</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-center-ri">
+                        <div class="footer-center-ri-tit std-h3">联系我们帮助您开发<br>稳定安全高性能可扩展<br>的马来西亚支付系统</div>
+                        <div class="more-butt">
+                            <a href="https://t.me/ukpaysys" target="_blank" class="inbl-cont-more" rel="nofollow">
+                                <p>联系我们</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- public start -->
+    <script src="js/public.js"></script>
+    <script src="js/base-v4.1.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- public end --> <!-- public end -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        $('.acru-li').each(function () {
+            var shu1 = $(this).find('.acru-li-ul').eq(0).find('.acru-li-ul-li').length;
+            $(this).stop().css('--total', shu1);
+        });
+        //关于我们轮播
+        $('.ambr-ul').each(function () {
+            var html1 = $(this).find('.about-main-ul-li').eq(0).html();
+            $(this).find('.about-main-ul-li').eq(0).remove();
+            $(this).append('<li class="about-main-ul-li">' + html1 + '</li>');
+        });
+        $('.about-main-ul').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.ambr-ul',
+            prevArrow: '.arrow-prev',
+            nextArrow: '.arrow-next',
+        });
+        $('.ambr-ul').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.about-main-ul',
+        });
+        $('.ambr-ul').click(function () {
+            $('.about-main-ul').slick('slickNext');
+        });
+        $('.about-main-ul').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+            $('.ambr-controls-dots li').eq(nextSlide).addClass('on').siblings().removeClass('on');
+        });
+        $('.ambr-controls-dots li').click(function () {
+            var num = $(this).index();
+            $(this).addClass('on').siblings().removeClass('on');
+            $('.about-main-ul').slick('slickGoTo', num);
+        });
+        if ($(window).width() < 768) {
+            $('.about-data-ul').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+            }).slickAuto();
+        }
+        //数字滚动
+        // ys.numRoll(".num-span", false, 1000);
+
+
+        //里程碑
+        // 第一个轮播 
+        slideW = 23;
+        radius = slideW * 0.5 / Math.sin(Math.PI / 20);
+        console.log(slideW, radius);
+        var swiperContent = new Swiper('.about-land-swiper', {
+            watchSlidesProgress: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            loop: true,
+            loopedSlides: 5,
+            grabCursor: true,
+            slideToClickedSlide: true,
+            breakpoints: {
+                360: {
+                    spaceBetween: 10,
+                },
+                768: {
+                    spaceBetween: 0,
+                },
+            },
+            navigation: {
+                nextEl: ".arrow-next",
+                prevEl: ".arrow-prev",
+            },
+            on: {
+                progress: function (swiper, progress) {
+                    for (i = 0; i < this.slides.length; i++) {
+                        let slide = this.slides.eq(i);
+                        let slideProgress = this.slides[i].progress;
+                        // 计算动态效果参数
+                        let baseProgress = slideProgress;
+                        let cosValue = Math.cos(baseProgress * 0.1 * Math.PI);
+                        let translateX = baseProgress * (slideW / 3 - cosValue * slideW * 1 / 3) + 'vw';
+                        let rotateY = baseProgress * 18;
+                        let translateZ = (radius - cosValue * radius - 10) + 'vw';
+                        slide.transform('translateX(' + translateX + ') translateZ(' + translateZ + ') rotateY(' + rotateY + 'deg)');
+                    }
+                },
+                setTransition: function (swiper, transition) {
+                    for (var i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides.eq(i)
+                        slide.transition(transition);
+                    }
+                }
+            }
+        });
+        // 第二个轮播 
+        var swiperTimeline = new Swiper(".about-land-linetime", {
+            slidesPerView: 'auto',
+            slidesPerGroup: 1,
+            speed: 800,
+            loop: true,
+            centeredSlides: true,
+            autoplay: false,
+            slideToClickedSlide: true,
+            // navigation: {
+            //     nextEl: ".arrow-next",
+            //     prevEl: ".arrow-prev",
+            // },
+        });
+        swiperTimeline.params.loopedSlides = swiperContent.params.loopedSlides;
+        function syncSwipers(from, to) {
+            const target = from.realIndex;          // 去克隆后的真实索引
+            if (to.realIndex !== target) {
+                to.slideTo(target + to.loopedSlides, 300, false);
+            }
+        }
+        swiperContent.on('slideChange', () => syncSwipers(swiperContent, swiperTimeline));
+        swiperTimeline.on('slideChange', () => syncSwipers(swiperTimeline, swiperContent));
+        $(window).on('resize', function () {
+            radius = slideW * 0.5 / Math.sin(Math.PI / 20);
+            swiperContent.update();   // 原来是 carouselSwiper，改回
+        });
+        $('.about-land-swiper').appear(function () {
+            swiperContent.autoplay.start();
+        })
+    </script>
+</body>
+
+</html>

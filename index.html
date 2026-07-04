@@ -1,0 +1,1150 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="专业提供马来西亚支付系统搭建服务，支持第三方支付、第四方聚合支付、代收代付系统开发，支持DuitNow、本地银行及电子钱包收款，自研自动监控与智能对账系统。技术团队深耕马来西亚支付行业多年，为企业提供稳定、安全、高效的支付系统解决方案。">
+    <meta name="keywords" content="马来西亚支付系统,马来西亚支付系统搭建,马来西亚收款系统搭建,DuitNow支付系统搭建,马来西亚代收系统搭建">
+    <title>马来西亚支付系统搭建 | DuitNow支付+银行钱包收款+自动监控</title>
+    <link href="css/iconfont.css" type="text/css" rel="stylesheet">
+    <link href="css/public.css" type="text/css" rel="stylesheet">
+    <link href="css/base-v4.1.0.min.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/media.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" sizes="32x32">
+    <script src="js/jquery.min.js"></script>
+    <!-- public end -->
+    <style>
+        .layui-layer-loading .layui-layer-content {
+            height: 60px !important
+        }
+    </style>
+</head>
+
+<body class="sticky-body">
+    <h1 class="ys-page-title">马来西亚支付系统搭建</h1>
+    <!-- ys-page-wrap加act代表导航永远反白 -->
+    <div class="ys-page-wrap home-main">
+        <!-- 顶部导航 -->
+        <link href="css/privacy.css" type="text/css" rel="stylesheet">  
+        </script>
+        <header class="ys-header">
+            <!-- pc顶部导航 -->
+            <div class="ys-hd-pc">
+                <div class="mod-head">
+                    <div class="head-logo ys-imgbox-contain">
+                        <a href="/">
+                            <img src="picture/logo.png" alt="马来西亚支付系统搭建开发" loading="lazy">
+                        </a>
+                    </div>
+                    <ul class="head-nav">
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="/" class="head-nav-item-title">首页</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <!-- 一级选中加act和yxnav-active1 -->
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="about.html" class="head-nav-item-title">关于我们</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="bgm.html" class="head-nav-item-title">马来西亚支付</a>
+                                <!-- 下拉 -->
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="bgm.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop01.svg" alt="马来网银支付系统" loading="lazy">
+                                                <p>马来网银支付系统</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="cgm.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop02.svg" alt="马来电子钱包支付系统" loading="lazy">
+                                                <p>马来电子钱包支付系统</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="dms.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop03.svg" alt="马来聚合支付系统" loading="lazy">
+                                                <p>马来聚合支付系统</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="Payment Received Notice.html" class="head-nav-item-title">到账通知</a>
+                                <!-- 下拉 -->
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="API 主动查询" loading="lazy">
+                                                <p>API 主动查询</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="短信通知（SMS）" loading="lazy">
+                                                <p>短信通知（SMS）</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="APP Push 通知" loading="lazy">
+                                                <p>APP Push 通知</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="邮件通知（Email）" loading="lazy">
+                                                <p>邮件通知（Email）</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="news.html" class="head-nav-item-title">支付新闻</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="career.html" class="head-nav-item-title">技术优势</a>
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop04.svg" alt="高并发架构" loading="lazy">
+                                                <p>高并发架构</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="银行级安全防护" loading="lazy">
+                                                <p>银行级安全防护</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="标准API接口" loading="lazy">
+                                                <p>标准API接口</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="灵活定制开发" loading="lazy">
+                                                <p>灵活定制开发</p>
+                                            </a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="head-other">
+                        <div class="head-more">
+                            <a href="https://t.me/ukpaysys" target="_blank" class="head-more-link" rel="nofollow">
+                                <p>联系我们</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- 主体内容 -->
+        <main class="ys-main">
+            <!-- page start -->
+            <section class="ys-banner">
+                <!-- 轮播加类名 ys-dots1 代表 轮播点是进度条 -->
+                <ul class="ys-ban-slick ys-dots1 std-dots1">
+                    <li class="ys-ban-li">
+                        <!-- <a href=""> -->
+                        <!-- 图 -->
+                        <div class="ys-ban-imgbox">
+                            <!-- pc端图片 -->
+                            <img class="ys-ban-pc" src="picture/banner1.png" alt="马来西亚支付系统专业搭建·开发·出租" loading="lazy">
+                        </div>
+                        <div class="ys-ban-txtbox ys-pos-center ys-cont1400">
+                            <div class="ys-ban-title">马来西亚支付系统专业搭建·开发·出租</div>
+                        </div>
+                        <!-- </a> -->
+                    </li>
+                </ul>
+                <div class="scroll-btn">
+                    <div class="scroll-btn-img">
+                        <img src="picture/a1icon01.svg" alt="了解我们的马来西亚支付系统" loading="lazy">
+                    </div>
+                    <div class="std-word2">了解我们的马来西亚支付系统<img src="picture/jian.svg" alt="jian_svg"></div>
+                </div>
+            </section>
+            <div class="home-about-wai">
+                <section class="home-about std-padd1">
+                    <div class="ys-cont1400">
+                        <h2 class="home-about-tit std-h2 wow ys-fadeup1">为什么选择我们</h2>
+                        <div class="home-about-ri">
+                            <div class="home-about-ri-text wow ys-fadeup1">
+                                <p>我们是一支专注于支付系统开发的技术团队，长期深耕马来西亚本地支付领域，致力于为企业提供安全、稳定、高效的支付系统开发服务。
+                                    团队熟悉马来西亚主流银行支付、电子钱包、DuitNow QR、聚合支付等本地支付生态，可根据不同行业需求提供定制化解决方案</p>
+                            </div>
+                            <ul class="home-about-ri-ul wow ys-fadeup1">
+                                <li class="iaru-li">
+                                    <div class="iaru-li-cont-num"> <span data-form="0" data-to="3">20+</span></div>
+                                    <div class="iaru-li-cont-text">支付渠道接入</div>
+                                </li>
+                                <li class="iaru-li">
+                                    <div class="iaru-li-cont-num"> <span data-form="0" data-to="100+">100</span>+</div>
+                                    <div class="iaru-li-cont-text">专业客户服务</div>
+                                </li>
+                                <li class="iaru-li">
+                                    <div class="iaru-li-cont-num"> <span data-form="0" data-to="90">90</span>%</div>
+                                    <div class="iaru-li-cont-text">成单率极高</div>
+                                </li>
+                                <li class="iaru-li">
+                                    <div class="iaru-li-cont-num"><span data-form="0" data-to="10">7×24</span></div>
+                                    <div class="iaru-li-cont-text">技术运维支持</div>
+                                </li>
+                            </ul>
+                            <div class="std-btn1 wow ys-fadeup1">
+                                <a href="about.html" target="_self" class="std-btn1-link">
+                                    <div class="std-word2">了解更多</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-about-back">
+                        <img src="picture/a1background.png" alt="为什么选择我们的马来西亚支付系统" loading="lazy" >
+                    </div>
+                </section>
+                
+            </div>
+            
+            <section class="home-serve std-padd2">
+                <div class="ys-cont1400 home-serve-title">
+                    <h2 class="home-serve-tit std-h2 wow ys-fadeup1">我们的服务方案</h2>
+                </div>
+                <div class="home-serve-back">
+                    <img src="picture/a1background02-87.png" alt="我们的服务方案" loading="lazy">
+                </div>
+                <div class="ys-cont1400 wow ys-fadeup2">
+                    <ul class="home-serve-ul">
+                        <li class="home-serve-ul-li">
+                            <div class="isul-cont">
+                                <div class="isul-cont-le">
+                                    <img src="picture/a1icon02.svg" alt="马来三方支付系统方案" loading="lazy">
+                                </div>
+                                <div class="isul-cont-ri">
+                                    <div class="isul-cont-ri-tit">马来网银支付系统方案</div>
+                                    <div class="isul-cont-ri-text">
+                                        <p>接入马来西亚本地主流银行，依托DuitNow ID即时到账、IBG（跨行普通转账）或 FPX支付网关实现跨行收款转账。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="home-serve-ul-li">
+                            <div class="isul-cont">
+                                <div class="isul-cont-le">
+                                    <img src="picture/a1icon03.svg" alt="马来西亚四方支付系统方案" loading="lazy">
+                                </div>
+                                <div class="isul-cont-ri">
+                                    <div class="isul-cont-ri-tit">马来西亚四方支付系统方案</div>
+                                    <div class="isul-cont-ri-text">
+                                        <p>支持对接多个上游支付渠道，并为下游商户提供统一收款与资金管理服务</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="home-serve-ul-li">
+                            <div class="isul-cont">
+                                <div class="isul-cont-le">
+                                    <img src="picture/a1icon04.svg" alt="马来西亚聚合支付系统方案" loading="lazy">
+                                </div>
+                                <div class="isul-cont-ri">
+                                    <div class="isul-cont-ri-tit">马来西亚聚合支付系统方案</div>
+                                    <div class="isul-cont-ri-text">
+                                        <p>支持将本地主流银行、电子钱包、上游支付渠道等多种支付方式统一接入，实现一个接口管理多个支付渠道</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="home-serve-ul-li">
+                            <div class="isul-cont">
+                                <div class="isul-cont-le">
+                                    <img src="picture/a1icon05.svg" alt="马来西亚收付款系统方案" loading="lazy">
+                                </div>
+                                <div class="isul-cont-ri">
+                                    <div class="isul-cont-ri-tit">马来西亚收付款系统方案</div>
+                                    <div class="isul-cont-ri-text">
+                                        <p>一套系统同时支持多通道收款、付款，灵活满足客户需求，减少资金归集成本，用户体验更高，资金流转更高效。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="home-accom">
+                <div class="home-accom-bg">
+                    <img src="picture/001.svg" alt=马来西亚支付系统开发" loading="lazy">
+                    <div class="home-accom-bg-mid">
+                        <img src="picture/002.svg" alt="马来西亚支付系统开发" loading="lazy">
+                    </div>
+                    <img src="picture/001.svg" alt="马来西亚支付系统开发" loading="lazy">
+                </div>
+                <div class="home-accom-core">
+                    <div class="ys-cont1400">
+                        <div class="home-accom-cont">
+                            <h2 class="home-accom-cont-tit std-h1">稳定·安全·<br>高性能·可扩展</h2>
+                            <div class="home-accom-cont-text">
+                                <p>我们专注于马来西亚支付系统开发，程序由经验丰富的技术团队完全自研，打造稳定、安全、高性能、可扩展的企业级支付系统</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-accom-all">
+                    <div class="ys-cont1400">
+                        <div class="home-accom-img home-accom-img1">
+                            <div class="ys-imgbox-cover wow ys-fadeup2">
+                                <img src="picture/shouye01.png" alt="马来西亚支付系统开发">
+                            </div>
+                        </div>
+                        <div class="home-accom-img home-accom-img2">
+                            <div class="ys-imgbox-cover wow ys-fadeup2">
+                                <img src="picture/shouye02.png" alt="马来西亚支付系统开发">
+                            </div>
+                        </div>
+                        <div class="home-accom-img home-accom-img3">
+                            <div class="ys-imgbox-cover wow ys-fadeup2">
+                                <img src="picture/shouye03.png" alt="马来西亚支付系统开发">
+                            </div>
+                        </div>
+                        <div class="home-accom-img home-accom-img4">
+                            <div class="ys-imgbox-cover wow ys-fadeup2">
+                                <img src="picture/shouye04.png" alt="马来西亚支付系统开发">
+                            </div>
+                        </div>
+                        <div class="home-accom-img home-accom-img5">
+                            <div class="ys-imgbox-cover wow ys-fadeup2">
+                                <img src="picture/shouye05.png" alt="马来西亚支付系统开发">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="home-new">
+                <div class="ys-cont1400">
+                    <div class="home-new-title">
+                        <h2 class="home-new-tit std-h2 std-mar wow ys-fadeup1">支付新闻</h2>
+                        <div class="std-btn1 wow ys-fadeup1">
+                            <a href="news.html" target="_self" class="std-btn1-link">
+                                <div class="std-word2">查看全部新闻</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home-new-below">
+                        <div class="home-new-below-le wow ys-fadeup2">
+                            <a href="news2.html" class="inbl-link">
+                                <div class="ys-imgbox-cover">
+                                    <img src="picture/fengmian.png" alt="支付新闻">
+                                </div>
+                                <div class="inbl-cont">
+                                    <div class="inbl-cont-time">2026年03月13日</div>
+                                    <div class="inbl-cont-tit">马来西亚数字支付持续增长，企业加速布局支付系统</div>
+                                    <div class="inbl-cont-text">
+                                        <p>随着数字经济的发展，马来西亚数字支付市场持续扩大，本地网银、电子钱包及二维码支付已成为主流支付方式。
+                                            越来越多的企业通过接入聚合支付系统，实现多渠道统一管理，提升支付效率和用户体验。
+                                            专业的马来西亚支付系统支持银行转账、电子钱包、实时到账通知、API 接口及自动对账等功能，并采用高并发架构和银行级安全防护，
+                                            为企业提供稳定、安全、高效的支付解决方案，助力业务数字化发展。
+                                        </p>
+                                    </div>
+                                    <div class="more-butt">
+                                        <div class="inbl-cont-more">
+                                            <p>了解更多</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <ul class="home-new-below-ri">
+                            <li class="inbr-li wow ys-fadeup2">
+                                <a href="news1.html" class="inbr-li-link">
+                                    <div class="inbl-cont">
+                                        <div class="inbl-cont-time">2026年03月11日</div>
+                                        <div class="inbl-cont-tit">马来西亚本地支付生态持续完善，DuitNow QR成为主流收款方式</div>
+                                        <div class="inbl-cont-text">
+                                            <p>随着马来西亚数字支付基础设施不断升级，DuitNow QR 正逐渐成为本地商户最常用的统一二维码支付标准。
+                                                用户只需扫码即可完成银行转账或电子钱包支付，大幅提升线下收款效率。
+                                                与此同时，本地银行与电子钱包之间的互联互通能力不断增强，推动了网银支付与电子钱包支付的融合发展。
+                                                越来越多企业开始通过接入聚合支付系统，实现多渠道统一收款与实时交易处理，加快数字化支付转型进程。</p>
+                                        </div>
+                                        <div class="more-butt">
+                                            <div class="inbl-cont-more">
+                                                <p>了解更多</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="inbr-li wow ys-fadeup2">
+                                <a href="news3.html" class="inbr-li-link">
+                                    <div class="inbl-cont">
+                                        <div class="inbl-cont-time">2026年01月09日</div>
+                                        <div class="inbl-cont-tit">马来西亚电子钱包支付增长迅速，推动本地数字消费升级</div>
+                                        <div class="inbl-cont-text">
+                                            <p>随着移动支付的普及，马来西亚电子钱包使用率持续上升，GrabPay、Touch 'n Go eWallet、Boost、ShopeePay 等平台在日常消费中占据重要地位，
+                                                覆盖线上购物、线下零售及生活服务等多个场景。
+                                                在这一趋势下，越来越多企业开始升级支付系统，通过接入多种电子钱包与本地银行支付方式，
+                                                实现统一收款与订单自动化管理，从而提升支付效率与用户体验，加速业务数字化发展。
+                                            </p>
+                                        </div>
+                                        <div class="more-butt">
+                                            <div class="inbl-cont-more">
+                                                <p>了解更多</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> <!-- page end -->
+        </main>
+
+        <!-- ================= 友情链接 ================= -->
+        <div class="section">
+        <div class="title">友情链接</div>
+
+        <div class="partners">
+            <div class="partner">印度</div>
+            <div class="partner">越南</div>
+            <div class="partner">菲律宾</div>
+            <div class="partner">泰国</div>
+            <div class="partner">非洲</div>
+            <div class="partner">马来西亚</div>
+            <div class="partner">印度尼西亚</div>
+            <div class="partner">其他地区</div>
+        </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="ys-footer">
+            <div class="std-move" style="--bg: #072100;"></div>
+            <div class="ys-cont1400">
+                <div class="footer-top">
+                    <a href="">
+                        <img src="picture/logo.png" alt="马来西亚支付系统搭建开发">
+                    </a>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-center-le">
+                        <ul>
+                            <li><a href="bgm.html">马来西亚支付</a>
+                                <ul>
+                                    <li><a href="bgm.html">马来网银支付系统</a></li>
+                                    <li><a href="cgm.html">马来电子钱包支付系统</a></li>
+                                    <li><a href="dms.html">马来聚合支付方案</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Payment Received Notice.html">到账通知</a>
+                                <ul>
+                                    <li><a href="Payment Received Notice.html">Webhook 回调通知</a></li>
+                                    <li><a href="Payment Received Notice.html">API 主动查询</a></li>
+                                    <li><a href="Payment Received Notice.html">短信通知（SMS）</a></li>
+                                    <li><a href="Payment Received Notice.html">APP Push 通知</a></li>
+                                    <li><a href="Payment Received Notice.html">邮件通知（Email）</a></li>
+                                    <li><a href="Payment Received Notice.html">后台实时订单同步</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="news.html">支付新闻</a></li>
+                            <li><a href="career.html">技术优势</a>
+                                <ul>
+                                    <li><a href="career.html">高并发架构</a></li>
+                                    <li><a href="career.html">银行级安全防护</a></li>
+                                    <li><a href="career.html">标准API接口</a></li>
+                                    <li><a href="career.html">灵活定制开发</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-center-ri">
+                        <div class="footer-center-ri-tit std-h3">联系我们帮助您开发<br>稳定安全高性能可扩展<br>的马来西亚支付系统</div>
+                        <div class="more-butt">
+                            <a href="https://t.me/ukpaysys" target="_blank" class="inbl-cont-more" rel="nofollow">
+                                <p>联系我们</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- public start -->
+    <script src="js/public.js"></script>
+    <script src="js/base-v4.1.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- public end --> <!-- public end -->
+    <script>
+        $(function () {
+            // banner相关
+            bannerInit();
+            cartoon();
+            about();
+            moni1();
+            let initialized = false;
+            function safeInit() {
+                if (initialized) return;
+                initialized = true;
+
+                accom();
+                ScrollTrigger.refresh();
+            }
+            $(window).on('load', safeInit);
+            setTimeout(safeInit, 100);
+        });
+        // banner相关
+        function bannerInit() {
+            // 轮播初始化
+            $('.ys-ban-slick').slick({
+                dots: true,
+                arrows: true,
+                speed: 1000,
+                autoplaySpeed: 4000,
+                pauseOnHover: false,
+            });
+            // 视频播完轮播
+            banVideo(".ys-ban-slick");
+            $('.scroll-btn').click(function () {
+                $("html,body").stop().animate({
+                    scrollTop: $('.ys-banner').height(),
+                }, 500)
+            });
+        }
+        function banVideo(selector) {
+            var $obj = $(selector);
+            var autoplay = true;
+            if ($(window).width() > 1199 && $obj.find("video").length > 0) {
+                init();
+                function init() {
+                    firstVideo();
+                    videoEnd();
+                    afterChange();
+                }
+                // 检验第一屏是否有视频
+                function firstVideo() {
+                    var $firSlide = $obj.find(".slick-slide[data-slick-index=0]");
+                    var $video = $firSlide.find("video");
+                    // autoplay自动播放
+                    if ($video.length > 0) {
+                        $obj.slick('slickPause');
+                        // 如果轮播只有一个循环播放
+                        if ($obj.get(0).slick.slideCount < 2) {
+                            // $video.attr("loop", "loop");
+                        };
+                        if ($video.get(0).paused) {
+                            setTimeout(function () {
+                                $video.get(0).play();
+                            }, 100)
+                        }
+                    } else {
+                        $obj.slick('slickPlay');
+                    }
+                }
+                // 切换到下一张是否有视频
+                function afterChange() {
+                    $obj.on('afterChange', function (event, slick, index) {
+                        // 视频暂停并回到第一帧
+                        $obj.find("video").each(function () {
+                            var video = $(this).get(0);
+                            video.pause();
+                            video.currentTime = 0;
+                        });
+                        // 有视频则暂停轮播
+                        var $nowSlide = $(slick.$slides[index]);
+                        var $video = $nowSlide.find("video");
+                        if ($video.length > 0) {
+                            $obj.slick('slickPause');
+                            $video.get(0).play();
+                        } else {
+                            if (autoplay) {
+                                $obj.slick('slickPlay');
+                            }
+                        };
+                    });
+                };
+                // 视频播完切换到下一张
+                function videoEnd() {
+                    $obj.find("video").each(function () {
+                        var video = $(this).get(0);
+                        video.onended = function () {
+                            if (autoplay) {
+                                $obj.slick("next");
+                                $obj.slick('slickPlay');
+                            }
+                        };
+                    });
+                };
+            } else {
+                $obj.slick('play');
+            };
+            var banvideo = {
+                play: function () {
+                    $obj.slick('slickPlay');
+                    autoplay = true;
+                },
+                pause: function () {
+                    autoplay = false;
+                    $obj.slick('slickPause');
+                }
+            }
+            return banvideo;
+        };
+        function cartoon() {
+            seq();
+            function seq() {
+                if ($(window).width() < 768) {
+                    const canvas_ph = document.getElementById("home-cartoon-ph");
+                    const context = canvas_ph.getContext("2d");
+                    canvas_ph.width = 750;
+                    canvas_ph.height = 1334;
+                    const frameCount = 70;
+                    const currentFrame = index => (
+                        `/Public/Cn/images/ph-webp/1002sj2_000${(index).toString().padStart(2, '0')}.webp`
+                    );
+                    const images = []
+                    const airpods = {
+                        frame: 0
+                    };
+                    for (let i = 0; i < frameCount; i++) {
+                        const img = new Image();
+                        img.src = currentFrame(i);
+                        images.push(img);
+                    }
+                    var height1 = $('.home-cartoon-pic').height() - $(window).height();
+                    var cart_gsap = gsap.timeline();
+                    cart_gsap.fromTo('.home-cartoon-pic-box', {
+                        clipPath: 'inset(0vw 0vw 0vw 0vw round 0px)',
+                    }, {
+                        clipPath: 'inset(3.75vw 3.75vw 40vh 3.75vw round 20px)',
+                        duration: 3,
+                        delay: 1,
+                        ease: "none",
+                    }, 0)
+                        .to(airpods, {
+                            frame: frameCount - 1,
+                            snap: "frame",
+                            duration: 4,
+                            ease: "none",
+                            onUpdate: render, // 使用onUpdate上的动画，而不是scrollTrigger的onUpdate 
+                        }, 0)
+                        .to('.home-cartoon-inof-nub1 .home-cartoon-box', {
+                            marginTop: '-40vh',
+                            duration: 3,
+                            delay: 1,
+                            ease: "none",
+                        }, 0)
+                    ScrollTrigger.create({
+                        animation: cart_gsap,
+                        trigger: '.home-cartoon',
+                        endTrigger: '.home-cartoon',
+                        start: "top top",
+                        end: "top top-=" + height1,
+                        scrub: 0.5,
+                    });
+                    images[0].onload = render;
+                    function render() {
+                        context.clearRect(0, 0, canvas_ph.width, canvas_ph.height);
+                        context.drawImage(images[airpods.frame], 0, 0);
+                    }
+                } else {
+                    const canvas_pc = document.getElementById("home-cartoon-pc");
+                    const context = canvas_pc.getContext("2d");
+                    canvas_pc.width = 1920;
+                    canvas_pc.height = 940;
+                    const frameCount = 70;
+                    const currentFrame = index => (
+                        `/Public/Cn/images/home-webp/1002_000${(index).toString().padStart(2, '0')}.webp`
+                    );
+                    const images = []
+                    const airpods = {
+                        frame: 0
+                    };
+                    for (let i = 0; i < frameCount; i++) {
+                        const img = new Image();
+                        img.src = currentFrame(i);
+                        images.push(img);
+                    }
+                    var height1 = $('.home-cartoon-pic').height() - $(window).height();
+                    var cart_gsap = gsap.timeline();
+                    cart_gsap.fromTo('.home-cartoon-pic-box', {
+                        clipPath: 'inset(0vw 0vw 0vw 0vw round 0px)',
+                    }, {
+                        clipPath: 'inset(3.75vw 46.15vw 3.75vw 3.75vw round 32px)',
+                        duration: 6,
+                        delay: 2,
+                        ease: "none",
+                    }, 0)
+                        .to(airpods, {
+                            frame: frameCount - 1,
+                            snap: "frame",
+                            duration: 8,
+                            delay: 1,
+                            ease: "none",
+                            onUpdate: render, // 使用onUpdate上的动画，而不是scrollTrigger的onUpdate 
+                        }, 0)
+                        .to('.home-cartoon-inof-nub1 .home-cartoon-box', {
+                            x: '0vw',
+                            duration: 6,
+                            delay: 2,
+                            ease: "none",
+                        }, 0)
+                    ScrollTrigger.create({
+                        animation: cart_gsap,
+                        trigger: '.home-cartoon',
+                        endTrigger: '.home-cartoon',
+                        start: "top top",
+                        end: "top top-=" + height1,
+                        scrub: 0.5,
+                    });
+                    images[0].onload = render;
+                    function render() {
+                        context.clearRect(0, 0, canvas_pc.width, canvas_pc.height);
+                        context.drawImage(images[airpods.frame], 0, 0);
+                    }
+                }
+            }
+            if ($(window).width() > 767) {
+                core();
+            }
+            function core() {
+                var arr = [];
+                var start1 = [];
+                var end1 = [];
+                var length1 = $('.home-cartoon-inof-nub').length - 1;
+                $('.home-cartoon-inof-nub').each(function () {
+                    var num = $(this).index();
+                    var ju = parseFloat($('.home-cartoon-zhan').find('li').height());
+                    var $ele1 = $('.home-cartoon-zhan').find('li').eq(num);
+                    var $text = $(this).find('.home-cartoon-wai');
+                    var $img = $(this).find('.home-cartoon-cont-img');
+                    var $box = $(this).find('.home-cartoon-cont-ri');
+                    start1[num] = $('.home-cartoon-inof-nub1').height() + ju * num;
+                    end1[num] = start1[num] + ju;
+                    var $ele = $(this);
+                    var $eled = $(this).find('.home-cartoon-cont');
+                    var $ele2 = $(this).next();
+                    var $img2 = $(this).next().find('.home-cartoon-cont-img');
+                    var $text2 = $(this).next().find('.home-cartoon-wai');
+                    var $ele3 = $(this).prev();
+                    arr[num] = gsap.timeline();
+                    if (num == 0) {
+                        const time1 = 6;
+                        const time2 = 1.5;
+                        const time3 = 13.5;
+                        const time4 = 1.5;
+                        arr[num].to('.home-cartoon-pic-box', {
+                            scale: '0.5625',
+                            duration: time2,
+                            ease: "sine.inOut",
+                        }, time1)
+                        arr[num].to($img, {
+                            scale: '0.5625',
+                            duration: time2,
+                            ease: "sine.inOut",
+                        }, time1)
+                            .to($box, {
+                                width: '90%',
+                                duration: time2,
+                                ease: "sine.inOut",
+                            }, time1)
+                            .to($text, {
+                                width: '28.18vw',
+                                x: '-50.1vw',
+                                height: 'auto',
+                                y: '11.1vw',
+                                duration: time2,
+                                ease: "sine.inOut",
+                            }, time1)
+                        if ($(window).width() > 1199) {
+                            arr[num].to($text, {
+                                width: '28.18vw',
+                                x: '-50.1vw',
+                                height: 'auto',
+                                y: '11.1vw',
+                                duration: time2,
+                                ease: "sine.inOut",
+                            }, time1)
+                        } else {
+                            arr[num].to($text, {
+                                width: '28.18vw',
+                                x: '-50.1vw',
+                                height: 'auto',
+                                y: '23.1vw',
+                                duration: time2,
+                                ease: "sine.inOut",
+                            }, time1)
+                        }
+                        arr[num].to($ele2, {
+                            x: '42.4vw',
+                            opacity: 1,
+                            duration: time2,
+                            ease: "sine.inOut",
+                        }, time1)
+                            .to($ele2, {
+                                x: '0vw',
+                                opacity: 1,
+                                duration: time4,
+                                ease: "sine.inOut",
+                            }, time3)
+                            .to($ele, {
+                                x: '-50vw',
+                                opacity: 1,
+                                duration: time4,
+                                ease: "sine.inOut",
+                            }, time3)
+                    }
+                    if (num != 0 && num != length1) {
+                        const time5 = 6;
+                        const time6 = 1.5;
+                        const time7 = 13.5;
+                        const time8 = 1.5;
+                        arr[num].to($img, {
+                            x: '21.2vw',
+                            duration: time6,
+                            ease: "sine.inOut",
+                        }, 4)
+                            .to($text, {
+                                opacity: 0,
+                                duration: time6,
+                                ease: "sine.inOut",
+                            }, 4)
+                            .to($ele2, {
+                                opacity: 0,
+                                duration: 0.5,
+                                ease: "sine.inOut",
+                            }, 4)
+                            .to($text2, {
+                                opacity: 0,
+                                duration: 0.5,
+                                ease: "sine.inOut",
+                            }, 4)
+                            .to($ele2, {
+                                x: '21.2vw',
+                                duration: time6,
+                                ease: "sine.inOut",
+                            }, 5)
+                            .fromTo($img, {
+                                clipPath: 'inset(0vw 0vw 0vw 0vw round 32px)',
+                            }, {
+                                clipPath: 'inset(0vw 50% 0vw 50% round 32px)',
+                                duration: time6,
+                                ease: "sine.inOut",
+                                yoyo: true,
+                                repeat: 1,
+                            }, 9)
+                            .fromTo($img2, {
+                                clipPath: 'inset(0vw 0vw 0vw 0vw round 32px)',
+                            }, {
+                                clipPath: 'inset(0vw 50% 0vw 50% round 32px)',
+                                duration: time6,
+                                ease: "sine.inOut",
+                                yoyo: true,
+                                repeat: 1,
+                            }, 9)
+                            .to($img, {
+                                opacity: 0,
+                                duration: time6,
+                                ease: "sine.inOut",
+                            }, 9)
+                            .to($ele2, {
+                                opacity: 1,
+                                duration: time6,
+                                ease: "sine.inOut",
+                            }, 9)
+                            .to($text2, {
+                                opacity: 1,
+                                duration: time6,
+                                ease: "sine.inOut",
+                            }, 13.5)
+                            .to($img, {
+                                x: 0,
+                                duration: time6,
+                                ease: "sine.inOut",
+                            }, 13.5)
+                            .to($ele2, {
+                                x: 0,
+                                duration: time6,
+                                ease: "sine.inOut",
+                            }, 13.5)
+                    }
+                    arr[num].to($ele1, {
+                        duration: 15,
+                        ease: "sine.inOut",
+                    }, 0)
+                    ScrollTrigger.create({
+                        animation: arr[num],
+                        trigger: '.home-cartoon',
+                        endTrigger: '.home-cartoon',
+                        start: "top top-=" + start1[num],
+                        end: "top top-=" + end1[num],
+                        scrub: 0.5,
+                        onUpdate: function (self) {
+                            // console.log(num,self.progress);
+                        },
+                        onToggle: (self) => {
+                            if (self.isActive) {
+                            }
+                        },
+                    });
+                })
+            }
+        }
+        function about() {
+            ys.numRoll(".iaru-li-cont-num span", false, 1000);
+            $('.home-about-back').appear(function () {
+                if ($(window).width() > 1199 && $(this).find('video').length > 0) {
+                    $(this).find('video').get(0).play();
+                    $(this).find('video').attr('loop', 'loop');
+                }
+            });
+        }
+        function moni1() {
+            let height1, height3;
+            let tl1, tl2, tl3;
+            let st1, st2, st3;
+            let arr1 = [];
+            let shao;
+            let distance;
+            function inita() {
+                height3 = $('.hmin-core').height();    // 安全线
+                height1 = height3 * 0.955;   // 动画线
+                $('.home-moni').css('--height1', height1 + 'px');
+                shao = $('.home-moni-inof').css('top');
+                distance = ($(window).height() + height3) * 0.55;
+                // 打标记
+                let length1 = $('.home-moni-inof-nub').length;
+                for (var i = 0; i < length1; i++) {
+                    arr1[i] = $('.home-moni-inof-nub').eq(i).find('.hmin-core-cry-add').height();
+                    if (arr1[i] > height3) {
+                        $('.home-moni-inof-nub').eq(i).addClass('act');
+                    } else {
+                        $('.home-moni-inof-nub').eq(i).removeClass('act');
+                    }
+                }
+                if (!tl1) {
+                    createTween1();
+                } else {
+                    tl1.invalidate();
+                    ScrollTrigger.refresh();
+                }
+                if (!tl2) {
+                    createTween2();
+                } else {
+                    tl2.invalidate();
+                    ScrollTrigger.refresh();
+                }
+                if (!tl3) {
+                    createTween3();
+                } else {
+                    tl3.invalidate();
+                    ScrollTrigger.refresh();
+                }
+            }
+            function createTween1() {
+                tl1 = gsap.timeline({ paused: true });
+                tl1.fromTo('.home-moni-inof-nub:nth-of-type(2n)', {
+                    y: distance * -0.05,
+                }, {
+                    y: 0,
+                    duration: 3,
+                    ease: "none",
+                }, 0)
+                    .fromTo('.home-moni-inof-nub:nth-of-type(2n-1)', {
+                        y: distance,
+                    }, {
+                        y: 0,
+                        duration: 3,
+                        ease: "none",
+                    }, 0)
+                st1 = ScrollTrigger.create({
+                    animation: tl1,
+                    trigger: '.home-moni',
+                    endTrigger: '.home-moni-zhen',
+                    start: "top bottom",
+                    end: "top top",
+                    scrub: 1.0,
+                    invalidateOnRefresh: true,
+                    onUpdate: function (self) {
+                    },
+                    onToggle: (self) => {
+                        if (self.isActive) {
+                        }
+                    },
+                });
+            }
+            function createTween2() {
+                tl2 = gsap.timeline({ paused: true });
+                tl2.fromTo('.home-moni-inof-nub:nth-of-type(2n)', {
+                    y: 0,
+                }, {
+                    y: distance * 1.0,
+                    duration: 3,
+                    ease: "none",
+                }, 0)
+                    .fromTo('.home-moni-inof-nub:nth-of-type(2n-1)', {
+                        y: 0,
+                    }, {
+                        y: distance * -1,
+                        duration: 3,
+                        ease: "none",
+                    }, 0)
+                st2 = ScrollTrigger.create({
+                    animation: tl2,
+                    trigger: '.home-moni-zhen',
+                    endTrigger: '.home-moni',
+                    start: "bottom bottom+=" + shao,
+                    end: "bottom top",
+                    scrub: 1.0,
+                    invalidateOnRefresh: true,
+                    onUpdate: function (self) {
+                    },
+                    onToggle: (self) => {
+                        if (self.isActive) {
+                        }
+                    },
+                });
+            }
+            function createTween3() {
+                tl3 = gsap.timeline({ paused: true });
+                tl3.fromTo('.home-moni-inof-nub:nth-of-type(2n).act .hmin-core-cry-add', {
+                    y: 0,
+                }, {
+                    y: '100%',
+                    duration: 3,
+                    ease: "none",
+                }, 0)
+                    .fromTo('.home-moni-inof-nub:nth-of-type(2n).act .hmin-core-cry-add img', {
+                        y: 0,
+                    }, {
+                        y: height1 * -1.0,
+                        duration: 3,
+                        ease: "none",
+                    }, 0)
+                    .fromTo('.home-moni-inof-nub:nth-of-type(2n-1) .hmin-core-cry-add', {
+                        y: 0,
+                    }, {
+                        y: '-100%',
+                        duration: 3,
+                        ease: "none",
+                    }, 0)
+                    .fromTo('.home-moni-inof-nub:nth-of-type(2n-1) .hmin-core-cry-add img', {
+                        y: 0,
+                    }, {
+                        y: height1 * 1.0,
+                        duration: 3,
+                        ease: "none",
+                    }, 0)
+                st3 = ScrollTrigger.create({
+                    animation: tl3,
+                    trigger: '.home-moni-zhen',
+                    endTrigger: '.home-moni',
+                    start: "top center",
+                    end: "bottom center",
+                    scrub: 0.2,
+                    invalidateOnRefresh: true,
+                    onUpdate: function (self) {
+                    },
+                    onToggle: (self) => {
+                        if (self.isActive) {
+                        }
+                    },
+                });
+            }
+            $(window).on('load resize', inita);
+            inita();
+            let rtime;
+            rtime = setTimeout(inita, 150);
+            $(window).on('load', () => {
+                clearTimeout(rtime);
+                rtime = setTimeout(inita, 150);
+            });
+            $(window).on('resize', () => {
+                clearTimeout(rtime);
+                rtime = setTimeout(inita, 150);
+            });
+        }
+        function accom() {
+            let height1, height2;
+            let gsap1_accom;
+            let accomst;
+            $(window).on('load resize', accominit);
+            accominit();
+            function accominit() {
+                height1 = $('.home-accom-cont').height();
+                height2 = ($(window).height() - height1) / 2;
+                if (!gsap1_accom) {
+                    accomgsap();
+                } else {
+                    gsap1_accom.invalidate();
+                    ScrollTrigger.refresh();
+                }
+            }
+            function accomgsap() {
+                gsap1_accom = gsap.timeline();
+                gsap1_accom.fromTo('.home-accom-cont', {
+                    y: 0,
+                }, {
+                    y: height2,
+                    duration: 3,
+                    ease: 'sine.Out',
+                })
+                    .fromTo('.home-accom-cont', {
+                    }, {
+                        duration: 10,
+                        ease: 'sine.Out',
+                    })
+                    .fromTo('.home-accom-cont', {
+                        y: height2,
+                    }, {
+                        y: height2 * 2,
+                        duration: 4,
+                        ease: 'sine.In',
+                    })
+                accomst = ScrollTrigger.create({
+                    animation: gsap1_accom,
+                    trigger: '.home-accom',
+                    endTrigger: '.home-accom',
+                    start: "top bottom",
+                    end: "bottom center",
+                    scrub: 1.0,
+                    onUpdate: function (self) {
+                    },
+                    onToggle: (self) => {
+                        if (self.isActive) {
+                        }
+                    },
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

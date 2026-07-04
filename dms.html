@@ -1,0 +1,622 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="专业搭建开发马来西亚支付系统,支持DuitNow支付,银行钱包收款,自动监控,团队深耕马来西亚数十年,拥有丰富的行业经验 致力于为您搭建开发出租马来西亚支付系统">
+    <meta name="keywords" content="马来西亚支付系统搭建,马来西亚支付系统,马来西亚第三方支付系统搭建,马来西亚收款系统搭建,马来西亚代收系统搭建">
+    <title>马来西亚支付系统出租 | 马来西亚支付系统搭建</title>
+    <link href="css/iconfont.css" type="text/css" rel="stylesheet">
+    <link href="css/public.css" type="text/css" rel="stylesheet">
+    <link href="css/base-v4.1.0.min.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/media.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" sizes="32x32">
+    <script src="js/jquery.min.js"></script>
+    <!-- public end -->
+    <style>
+        .layui-layer-loading .layui-layer-content {
+            height: 60px !important
+        }
+    </style>
+</head>
+<!-- body加sticky-body代表，body超出显示 -->
+
+<body>
+    <!-- ys-page-wrap加act代表导航永远反白 -->
+    <div class="ys-page-wrap inside-main mana-page">
+        <!-- 顶部导航 -->
+        <link href="css/privacy.css" type="text/css" rel="stylesheet">
+        <header class="ys-header">
+            <!-- pc顶部导航 -->
+            <div class="ys-hd-pc">
+                <div class="mod-head">
+                    <div class="head-logo ys-imgbox-contain">
+                        <a href="/">
+                            <img src="picture/logo.png" alt="马来西亚支付系统搭建开发" loading="lazy">
+                        </a>
+                    </div>
+                    <ul class="head-nav">
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="/" class="head-nav-item-title">首页</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <!-- 一级选中加act和yxnav-active1 -->
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="about.html" class="head-nav-item-title">关于我们</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="bgm.html" class="head-nav-item-title">马来西亚支付</a>
+                                <!-- 下拉 -->
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="bgm.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop01.svg" alt="马来网银支付系统" loading="lazy">
+                                                <p>马来网银支付系统</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="cgm.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop02.svg" alt="马来电子钱包支付系统" loading="lazy">
+                                                <p>马来电子钱包支付系统</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="dms.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop03.svg" alt="马来聚合支付系统" loading="lazy">
+                                                <p>马来聚合支付系统</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="Payment Received Notice.html" class="head-nav-item-title">到账通知</a>
+                                <!-- 下拉 -->
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="API 主动查询" loading="lazy">
+                                                <p>API 主动查询</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="短信通知（SMS）" loading="lazy">
+                                                <p>短信通知（SMS）</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="APP Push 通知" loading="lazy">
+                                                <p>APP Push 通知</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="邮件通知（Email）" loading="lazy">
+                                                <p>邮件通知（Email）</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="news.html" class="head-nav-item-title">支付新闻</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="career.html" class="head-nav-item-title">技术优势</a>
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop04.svg" alt="高并发架构" loading="lazy">
+                                                <p>高并发架构</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="银行级安全防护" loading="lazy">
+                                                <p>银行级安全防护</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="标准API接口" loading="lazy">
+                                                <p>标准API接口</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="灵活定制开发" loading="lazy">
+                                                <p>灵活定制开发</p>
+                                            </a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="head-other">
+                        <div class="head-more">
+                            <a href="https://t.me/ukpaysys" target="_blank" class="head-more-link" rel="nofollow">
+                                <p>联系我们</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> <!-- 主体内容 -->
+        <main class="ys-main">
+            <!-- page start -->
+            <!-- 内页banner区 -->
+            <section class="ys-nybanner">
+                <div class="ys-nyban-img">
+                    <img class="ys-nyban-pc" src="picture/c5bannerpc01.png" alt="马来本地支付系统" loading="lazy">
+                </div>
+                <div class="ys-nyban-title ys-cont1400 ys-pos-center">
+                    <h1 class="wow ys-fadeup1">马来本地支付系统</h1>
+                </div>
+                <!-- 面包屑 -->
+                <div class="mod-bread">
+                    <div class="ys-cont1400">
+                        <ul class="mod-bread-ul">
+                            <li class="mod-bread-ul-li">
+                                <a href="/">首页</a>
+                            </li>
+                            <li class="mod-bread-ul-li">
+                                <a href="./dms.html" target="">马来本地支付系统</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> <!-- 内容区 -->
+            <section class="mana-num">
+                <div class="ys-cont1400">
+                    <div class="mana-num-le">
+                        <h2 class="mana-num-le-tit std-h2 wow ys-fadeup2">专业技术团队为你搭建<br>全面 安全 高效的<br>马来西亚本地支付系统</h2>
+                        <div class="mana-num-le-text std-word1 wow ys-fadeup3">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="about-cert-ri">
+                        <ul class="about-cert-ri-ul wow ys-fadein1">
+                            <li class="acru-li acru-li1">
+                                <ul class="acru-li-ul">
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon03.svg" alt="支持主流本地支付" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">支持主流本地支付</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>聚合马来西亚多种银行及电子钱包支付方式</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon01.svg" alt="资金实时到账" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">资金实时到账</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>支持快速回调通知，订单状态实时同步。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon02.svg" alt="智能通道切换" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">智能通道切换</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>多通道路由自动分流，提升支付成功率。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon04.svg" alt="安全稳定运行" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">安全稳定运行</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>多重风控机制，保障交易安全与系统稳定。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon05.svg" alt="标准API快速对接" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">标准API快速对接</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>提供完善接口文档，轻松接入各类业务系统。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon06.svg" alt="高并发可扩展" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">高并发可扩展</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>安全稳定架构设计，支持大量订单稳定处理。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="acru-li-ul">
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon03.svg" alt="支持主流本地支付" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">支持主流本地支付</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>聚合马来西亚多种银行及电子钱包支付方式</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon01.svg" alt="资金实时到账" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">资金实时到账</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>支持快速回调通知，订单状态实时同步。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon02.svg" alt="智能通道切换" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">智能通道切换</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>多通道路由自动分流，提升支付成功率。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon04.svg" alt="安全稳定运行" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">安全稳定运行</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>多重风控机制，保障交易安全与系统稳定。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon05.svg" alt="标准API快速对接" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">标准API快速对接</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>提供完善接口文档，轻松接入各类业务系统。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon06.svg" alt="高并发可扩展" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">高并发可扩展</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>稳定安全架构设计，支持海量订单稳定处理。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="acru-li acru-li2">
+                                <ul class="acru-li-ul">
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon03.svg" alt="支持主流本地支付" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">支持主流本地支付</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>聚合马来西亚多种银行及电子钱包支付方式</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon01.svg" alt="资金实时到账" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">资金实时到账</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>支持快速回调通知，订单状态实时同步。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon02.svg" alt="智能通道切换" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">智能通道切换</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>多通道路由自动分流，提升支付成功率。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon04.svg" alt="安全稳定运行" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">安全稳定运行</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>多重风控机制，保障交易安全与系统稳定。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon05.svg" alt="标准API快速对接" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">标准API快速对接</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>提供完善接口文档，轻松接入各类业务系统。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon06.svg" alt="高并发可扩展" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">高并发可扩展</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>稳定安全架构设计，支持海量订单稳定处理。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="acru-li-ul">
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon03.svg" alt="支持主流本地支付" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">支持主流本地支付</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>聚合马来西亚多种银行及电子钱包支付方式</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon01.svg" alt="资金实时到账" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">资金实时到账</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>支持快速回调通知，订单状态实时同步。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon02.svg" alt="智能通道切换" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">智能通道切换</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>多通道路由自动分流，提升支付成功率。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon04.svg" alt="安全稳定运行" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">安全稳定运行</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>多重风控机制，保障交易安全与系统稳定。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon05.svg" alt="标准API快速对接" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">标准API快速对接</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>提供完善接口文档，轻松接入各类业务系统。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="acru-li-ul-li">
+                                        <div class="alul-cont">
+                                            <div class="alul-cont-icon">
+                                                <img src="picture/c5icon06.svg" alt="高并发可扩展" loading="lazy">
+                                            </div>
+                                            <div class="alul-cont-tit">高并发可扩展</div>
+                                            <div class="alul-cont-text std-word">
+                                                <p>稳定安全架构设计，支持海量订单稳定处理。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="std-move" style="--bg: #fff;"></div>
+            </section>
+            <section class="mana-trans mana-trans2">
+                <div class="ys-cont1400">
+                    <h2 class="mana-trans-tit std-h2 wow ys-fadeup2">马来西亚支付流程图</h2>
+                    <div class="mana-trans-img viewerimg wow ys-fadeup4">
+                        <img src="picture/c5img02.png"
+                             alt="马来西亚支付流程图" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section class="mana-hosi std-padd2">
+                <div class="std-move" style="--bg: #f2f3f4;"></div>
+                <div class="ys-cont1400">
+                    <div class="mana-hosi-le">
+                        <h2 class="mana-hosi-le-tit std-h2 wow ys-fadeup2">马来西亚本地化支付系统</h2>
+                        <div class="mana-hosi-le-text std-word1 wow ys-fadeup3">
+                            <p></p>
+                        </div>
+                        <ul class="mana-hosi-le-ul wow ys-fadeup4">
+                            <li class="mhlu-li">
+                                <div class="mhlu-li-tit">多商户统一管理</div>
+                                <div class="mhlu-li-text std-word2">
+                                    <p>多商户管理</p>
+                                    <p>后台统一运营</p>
+                                </div>
+                            </li>
+                            <li class="mhlu-li">
+                                <div class="mhlu-li-tit">自动对账统计</div>
+                                <div class="mhlu-li-text std-word2">
+                                    <p>实时生成交易报表</p>
+                                    <p>提升财务效率</p>
+                                </div>
+                            </li>
+                            <li class="mhlu-li">
+                                <div class="mhlu-li-tit">代收代付一体化</div>
+                                <div class="mhlu-li-text std-word2">
+                                    <p>同时支持收款与批量付款业务</p>
+                                </div>
+                            </li>
+                            <li class="mhlu-li">
+                                <div class="mhlu-li-tit">多币种资金结算</div>
+                                <div class="mhlu-li-text std-word2">
+                                    <p>支持马币（MYR）</p>
+                                    <p>多币种灵活结算</p>
+                                </div>
+                            </li>
+                            <li class="mhlu-li">
+                                <div class="mhlu-li-tit">7×24小时稳定运行</div>
+                                <div class="mhlu-li-text std-word2">
+                                    <p>全天候在线处理交易</p>
+                                    <p>保障业务连续性</p>
+                                </div>
+                            </li>
+                            <li class="mhlu-li">
+                                <div class="mhlu-li-tit">灵活权限控制</div>
+                                <div class="mhlu-li-text std-word2">
+                                    <p>支持多角色账号管理</p>
+                                    <p>操作权限独立分配</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mana-hosi-ri wow ys-fadeup4">
+                        <img src="picture/c5img03.png" alt="马来西亚本地化支付系统" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <!-- page end -->
+        </main>
+        <!-- 页脚 -->
+        <footer class="ys-footer">
+            <div class="std-move" style="--bg: #072100;"></div>
+            <div class="ys-cont1400">
+                <div class="footer-top">
+                    <a href="">
+                        <img src="picture/logo.png" alt="马来西亚支付系统搭建开发">
+                    </a>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-center-le">
+                        <ul>
+                            <li><a href="bgm.html">马来西亚支付</a>
+                                <ul>
+                                    <li><a href="bgm.html">马来网银支付系统</a></li>
+                                    <li><a href="cgm.html">马来电子钱包支付系统</a></li>
+                                    <li><a href="dms.html">马来聚合支付方案</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Payment Received Notice.html">到账通知</a>
+                                <ul>
+                                    <li><a href="Payment Received Notice.html">Webhook 回调通知</a></li>
+                                    <li><a href="Payment Received Notice.html">API 主动查询</a></li>
+                                    <li><a href="Payment Received Notice.html">短信通知（SMS）</a></li>
+                                    <li><a href="Payment Received Notice.html">APP Push 通知</a></li>
+                                    <li><a href="Payment Received Notice.html">邮件通知（Email）</a></li>
+                                    <li><a href="Payment Received Notice.html">后台实时订单同步</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="news.html">支付新闻</a></li>
+                            <li><a href="career.html">技术优势</a>
+                                <ul>
+                                    <li><a href="career.html">高并发架构</a></li>
+                                    <li><a href="career.html">银行级安全防护</a></li>
+                                    <li><a href="career.html">标准API接口</a></li>
+                                    <li><a href="career.html">灵活定制开发</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-center-ri">
+                        <div class="footer-center-ri-tit std-h3">联系我们帮助您开发<br>稳定安全高性能可扩展<br>的马来西亚支付系统</div>
+                        <div class="more-butt">
+                            <a href="https://t.me/ukpaysys" target="_blank" class="inbl-cont-more" rel="nofollow">
+                                <p>联系我们</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- public start -->
+    <script src="js/public.js"></script>
+    <script src="js/base-v4.1.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- public end --> <!-- public end -->
+    <script>
+        $(function () {
+            ys.viewer();
+            $('.acru-li').each(function () {
+                var shu1 = $(this).find('.acru-li-ul').eq(0).find('.acru-li-ul-li').length;
+                $(this).stop().css('--total', shu1);
+            });
+        })
+    </script>
+</body>
+
+</html>

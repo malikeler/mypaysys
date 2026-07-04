@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="专业搭建开发马来西亚支付系统,支持DuitNow支付,银行钱包收款,自动监控,团队深耕马来西亚数十年,拥有丰富的行业经验 致力于为您搭建开发出租马来西亚支付系统">
+    <meta name="keywords" content="马来西亚支付系统搭建,马来西亚支付系统,马来西亚第三方支付系统搭建,马来西亚收款系统搭建,马来西亚代收系统搭建">
+    <title>系统技术优势 | 马来西亚支付系统搭建</title>
+    <!-- public start -->
+    <link href="css/iconfont.css" type="text/css" rel="stylesheet">
+    <link href="css/public.css" type="text/css" rel="stylesheet">
+    <link href="css/base-v4.1.0.min.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/media.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" sizes="32x32">
+    <script src="js/jquery.min.js"></script>
+    <!-- public end -->
+    <style>
+        .layui-layer-loading .layui-layer-content {
+            height: 60px !important
+        }
+    </style>
+    <link href="css/swiper.min.css" type="text/css" rel="stylesheet">
+</head>
+<!-- body加sticky-body代表，body超出显示 -->
+
+<body class="people-body">
+    <!-- ys-page-wrap加act代表导航永远反白 -->
+    <div class="ys-page-wrap inside-main people-page">
+        <!-- 顶部导航 -->
+        <link href="css/privacy.css" type="text/css" rel="stylesheet">
+        <header class="ys-header">
+            <!-- pc顶部导航 -->
+            <div class="ys-hd-pc">
+                <div class="mod-head">
+                    <div class="head-logo ys-imgbox-contain">
+                        <a href="/">
+                            <img src="picture/logo.png" alt="马来西亚支付系统搭建开发" loading="lazy">
+                        </a>
+                    </div>
+                    <ul class="head-nav">
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="/" class="head-nav-item-title">首页</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <!-- 一级选中加act和yxnav-active1 -->
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="about.html" class="head-nav-item-title">关于我们</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="bgm.html" class="head-nav-item-title">马来西亚支付</a>
+                                <!-- 下拉 -->
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="bgm.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop01.svg" alt="马来网银支付系统" loading="lazy">
+                                                <p>马来网银支付系统</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="cgm.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop02.svg" alt="马来电子钱包支付系统" loading="lazy">
+                                                <p>马来电子钱包支付系统</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="dms.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop03.svg" alt="马来聚合支付系统" loading="lazy">
+                                                <p>马来聚合支付系统</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="Payment Received Notice.html" class="head-nav-item-title">到账通知</a>
+                                <!-- 下拉 -->
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="API 主动查询" loading="lazy">
+                                                <p>API 主动查询</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="短信通知（SMS）" loading="lazy">
+                                                <p>短信通知（SMS）</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="APP Push 通知" loading="lazy">
+                                                <p>APP Push 通知</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="Payment Received Notice.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="邮件通知（Email）" loading="lazy">
+                                                <p>邮件通知（Email）</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="news.html" class="head-nav-item-title">支付新闻</a>
+                                <!-- 下拉 -->
+                            </div>
+                        </li>
+                        <li class="head-nav-item ">
+                            <div class="head-nav-item-nub">
+                                <a href="career.html" class="head-nav-item-title">技术优势</a>
+                                <div class="head-nav-item-down">
+                                    <ul class="hnid-ul">
+                                        <!-- 二级选中加act和yxnav-active2 -->
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop04.svg" alt="高并发架构" loading="lazy">
+                                                <p>高并发架构</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="银行级安全防护" loading="lazy">
+                                                <p>银行级安全防护</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="标准API接口" loading="lazy">
+                                                <p>标准API接口</p>
+                                            </a>
+                                        </li>
+                                        <li class="hnid-ul-li ">
+                                            <a href="career.html" class="hnid-ul-li-cont">
+                                                <img src="picture/a1icontop05.svg" alt="灵活定制开发" loading="lazy">
+                                                <p>灵活定制开发</p>
+                                            </a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="head-other">
+                        <div class="head-more">
+                            <a href="https://t.me/ukpaysys" target="_blank" class="head-more-link" rel="nofollow">
+                                <p>联系我们</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- 主体内容 -->
+        <main class="ys-main">
+            <!-- page start -->
+            <!-- 内页banner区 -->
+            <section class="ys-nybanner">
+                <div class="ys-nyban-img">
+                    <img class="ys-nyban-pc" src="picture/g1bannerpc.png" alt="系统的技术优势" loading="lazy">
+                </div>
+                <div class="ys-nyban-title ys-cont1400 ys-pos-center">
+                    <h1 class="wow ys-fadeup1">系统的技术优势</h1>
+                    <p class="wow ys-fadeup2">我们的马来西亚支付系统有着高并发架构、银行级安全防护、标准API接口、灵活定制开发四大技术优势</p>
+                </div>
+                <!-- 面包屑 -->
+                <div class="mod-bread">
+                    <div class="ys-cont1400">
+                        <ul class="mod-bread-ul">
+                            <li class="mod-bread-ul-li">
+                                <a href="/">首页</a>
+                            </li>
+                            <li class="mod-bread-ul-li">
+                                <a href="" target="">技术优势</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 内容区 -->
+            <section class="system-master std-padd">
+                <div class="ys-cont1400">
+                    <div class="system-master-top">
+                        <h2 class="system-master-top-tit std-h2 wow ys-fadeup2"></h2>
+                        <div class="system-master-top-text std-word wow ys-fadeup2">
+                            <p></p>
+                        </div>
+                    </div>
+                    <ul class="system-master-ul">
+                        <li class="system-master-ul-li wow ys-fadeup3">
+                            <div class="smul-cont">
+                                <div class="ys-imgbox-cover">
+                                    <img src="picture/c4background05.png" alt="高并发架构" loading="lazy">
+                                </div>
+                                <div class="smul-cont-posi">
+                                    <div class="smul-cont-posi-top">
+                                        <div class="smul-cont-posi-tit std-h2">高并发架构</div>
+                                        <div class="smul-cont-posi-text yxedr-active">
+                                            <ul style="list-style-type: disc;">
+                                                <li>
+                                                    <p>系统专业团队自研，注重安全稳定架构构建，业务模块全面拆分，支持横向无限扩展，轻松应对流量爆发式增长</p>
+                                                </li>
+                                                <li>
+                                                    <p>核心功能全面微服务化，支付、订单、回调、账户等独立运行，互不影响，系统更稳定、更易扩展。</p>
+                                                </li>
+                                                <li>
+                                                    <p>引入高性能缓存机制（如 Redis），大幅减少数据库压力，实现毫秒级数据响应体验。</p>
+                                                </li>
+                                                <li>
+                                                    <p>采用消息队列异步处理机制，有效削峰填谷，让支付、回调、通知等流程更加稳定可靠。</p>
+                                                </li>
+                                                <li>
+                                                    <p>支持海量交易数据存储，数据库性能始终保持高效稳定，不受数据规模增长影响。</p>
+                                                </li>
+                                            </ul>
+                                            <p><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="system-master-ul-li wow ys-fadeup3">
+                            <div class="smul-cont">
+                                <div class="ys-imgbox-cover">
+                                    <img src="picture/c4background06.png" alt="银行级安全防护" loading="lazy">
+                                </div>
+                                <div class="smul-cont-posi">
+                                    <div class="smul-cont-posi-top">
+                                        <div class="smul-cont-posi-tit std-h2">银行级安全防护</div>
+                                        <div class="smul-cont-posi-text yxedr-active">
+                                            <ul style="list-style-type: disc;">
+                                                <li>
+                                                    <p>支付数据在传输过程中全程加密，有效防止数据泄露、篡改和中间人攻击。</p>
+                                                </li>
+                                                <li>
+                                                    <p>支持谷歌动态验证码登录安全机制，确保账户登录及关键操作安全可控</p>
+                                                </li>
+                                                <li>
+                                                    <p>实时监测异常交易、恶意请求及可疑行为，支持白名单、交易限额、等多种风控策略</p>
+                                                </li>
+                                                <li>
+                                                    <p>支持多角色、多级权限管理，精细化控制后台操作权限，所有关键操作均可追踪，降低人为风险</p>
+                                                </li>
+                                            </ul>
+                                            <p><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="system-master-ul-li wow ys-fadeup3">
+                            <div class="smul-cont">
+                                <div class="ys-imgbox-cover">
+                                    <img src="picture/c4background07.png" alt="标准API接口" loading="lazy">
+                                </div>
+                                <div class="smul-cont-posi">
+                                    <div class="smul-cont-posi-top">
+                                        <div class="smul-cont-posi-tit std-h2">标准API接口</div>
+                                        <div class="smul-cont-posi-text yxedr-active">
+                                            <ul style="list-style-type: disc;">
+                                                <li>
+                                                    <p>提供统一规范的接口，接口结构清晰、参数标准化，帮助开发者快速完成系统集成</p>
+                                                </li>
+                                                <li>
+                                                    <p>提供完善的接口文档、示例代码，降低开发成本，缩短支付系统上线周期。</p>
+                                                </li>
+                                                <li>
+                                                    <p>采用数字签名、随机字符串等安全验证机制，确保接口通信安全，防止数据被篡改。</p>
+                                                </li>
+                                                <li>
+                                                    <p>接口采用模块化设计，可根据业务需求快速扩展新的支付渠道、代付接口、风控功能及第三方服务。</p>
+                                                </li>
+                                            </ul>
+                                            <p><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="system-master-ul-li wow ys-fadeup3">
+                            <div class="smul-cont">
+                                <div class="ys-imgbox-cover">
+                                    <img src="picture/c4background08.png" alt="灵活定制开发" loading="lazy">
+                                </div>
+                                <div class="smul-cont-posi">
+                                    <div class="smul-cont-posi-top">
+                                        <div class="smul-cont-posi-tit std-h2">灵活定制开发</div>
+                                        <div class="smul-cont-posi-text yxedr-active">
+                                            <ul style="list-style-type: disc;">
+                                                <li>
+                                                    <p>可根据不同国家和地区的支付习惯，量身定制本地化支付系统。</p>
+                                                </li>
+                                                <li>
+                                                    <p>支持灵活接入各国主流银行、电子钱包、二维码支付、网银转账及本地支付渠道。</p>
+                                                </li>
+                                                <li>
+                                                    <p>支持多国家、多币种交易及结算，可根据业务需求配置本币、外币等结算方式。</p>
+                                                </li>
+                                                <li>
+                                                    <p>支持收银台页面、支付流程、订单逻辑、回调机制等个性化开发。</p>
+                                                </li>
+                                                <li>
+                                                    <p>系统支持多语言界面，可根据目标市场定制语言版本。</p>
+                                                </li>
+                                                <li>
+                                                    <p>采用模块化架构设计，可快速新增各国银行、电子钱包、聚合支付平台。</p>
+                                                </li>
+                                            </ul>
+                                            <p><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- 页脚 -->
+        <footer class="ys-footer">
+            <div class="std-move" style="--bg: #072100;"></div>
+            <div class="ys-cont1400">
+                <div class="footer-top">
+                    <a href="">
+                        <img src="picture/logo.png" alt="马来西亚支付系统搭建开发">
+                    </a>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-center-le">
+                        <ul>
+                            <li><a href="bgm.html">马来西亚支付</a>
+                                <ul>
+                                    <li><a href="bgm.html">马来网银支付系统</a></li>
+                                    <li><a href="cgm.html">马来电子钱包支付系统</a></li>
+                                    <li><a href="dms.html">马来聚合支付方案</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Payment Received Notice.html">到账通知</a>
+                                <ul>
+                                    <li><a href="Payment Received Notice.html">Webhook 回调通知</a></li>
+                                    <li><a href="Payment Received Notice.html">API 主动查询</a></li>
+                                    <li><a href="Payment Received Notice.html">短信通知（SMS）</a></li>
+                                    <li><a href="Payment Received Notice.html">APP Push 通知</a></li>
+                                    <li><a href="Payment Received Notice.html">邮件通知（Email）</a></li>
+                                    <li><a href="Payment Received Notice.html">后台实时订单同步</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="news.html">支付新闻</a></li>
+                            <li><a href="career.html">技术优势</a>
+                                <ul>
+                                    <li><a href="career.html">高并发架构</a></li>
+                                    <li><a href="career.html">银行级安全防护</a></li>
+                                    <li><a href="career.html">标准API接口</a></li>
+                                    <li><a href="career.html">灵活定制开发</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-center-ri">
+                        <div class="footer-center-ri-tit std-h3">联系我们帮助您开发<br>稳定安全高性能可扩展<br>的马来西亚支付系统</div>
+                        <div class="more-butt">
+                            <a href="https://t.me/ukpaysys" target="_blank" class="inbl-cont-more" rel="nofollow">
+                                <p>联系我们</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- public start -->
+    <script src="js/public.js"></script>
+    <script src="js/base-v4.1.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- public end --> <!-- public end -->
+    <script src="js/swiper.min.js"></script>
+    <script>
+        //banner定位
+        $('.people-butt-link').click(function () {
+            if ($(window).width() >= 1200) {
+                $("html,body").animate({
+                    scrollTop: $('.people-job').offset().top - $('.ys-hd-pc').height()
+                }, 700);
+            } else {
+                $("html,body").animate({
+                    scrollTop: $('.people-job').offset().top - $('.ys-hd-ph').height()
+                }, 700);
+            }
+        })
+        //空缺职位
+        $('body').on('click', '.ptlu-li-top', function () {
+            $(this).parents('.ptlu-li').toggleClass('on');
+            $(this).siblings('.ptlu-li-hidden').stop().slideToggle();
+            $(this).parents('.ptlu-li').siblings('.ptlu-li').removeClass('on');
+            $(this).parents('.ptlu-li').siblings('.ptlu-li').find('.ptlu-li-hidden').stop().slideUp();
+            $(this).parents('.pjbr-type-li').siblings('.pjbr-type-li').find('.ptlu-li').removeClass('on');
+            $(this).parents('.pjbr-type-li').siblings('.pjbr-type-li').find('.ptlu-li').find('.ptlu-li-hidden').stop().slideUp();
+        });
+        //下拉
+        ys.select(".pjbl-select", 'value', function (data) { console.log(data) });
+        var pos1 = parseFloat($('html').css('--headh')) + 40;
+        insideAnchor1('.pjbl-ul-li', '.mod-point', pos1);
+        function insideAnchor1(btn, selector, pos) {
+            var btn = btn ? btn : ".anchor-btn";
+            var selector = selector ? selector : ".mod-point";
+            var pos = pos ? pos : $('.ys-hd-pc').height();
+            if ($(window).width() < 1200) {
+                pos = pos ? pos : 56;
+            }
+            achange();
+            asideNav();
+            $(window).on("scroll", asideNav);
+            $(window).on("load", asideNav);
+            $(window).on("resize", asideNav);
+            function achange() {
+                $(btn).click(function () {
+                    setTimeout(function () {
+                        $("html,body").stop().animate({
+                            scrollTop: $('.act-nr').offset().top - pos
+                        }, 500);
+                    }, 100)
+                });
+                // 产品数据切换pc
+                $(btn).click(function () {
+                    var pag = $(this).attr('data-num');
+                    $(selector).removeClass('act-nr');
+                    $(selector + '[data-num="' + pag + '"]').addClass('act-nr');
+                });
+            }
+            function asideNav() {
+                for (var i = 0; i <= $(btn + ':last-child').attr('data-num'); i++) {
+                    if ($(selector + '[data-num="' + i + '"]').length > 0) {
+                        var pos2 = $(selector + '[data-num="' + i + '"]').offset().top - pos - 1;
+                        if ($(window).scrollTop() > pos2) {
+                            $(selector).removeClass('act-nr');
+                            $(selector + '[data-num="' + i + '"]').addClass('act-nr');
+                            $(btn + '[data-num="' + i + '"]').addClass('act').siblings().removeClass('act');
+                        }
+                    }
+                }
+            }
+        }
+
+
+        //员工培养
+        var swiper1 = new Swiper(".people-fost-swiper", {
+            slidesPerView: 'auto',
+            slidesPerGroup: 1,
+            speed: 800,
+            loop: true,
+            centeredSlides: true,
+            autoplay: false,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".arrow-next",
+                prevEl: ".arrow-prev",
+            },
+        });
+        $('.people-fost-swiper').appear(function () {
+            swiper1.autoplay.start();
+        });
+        if ($('.people-fost-swiper .swiper-slide').length <= 1) {
+            swiper_remove('.people-fost-swiper');
+        }
+
+        //员工故事
+        var swiper2 = new Swiper(".people-story-swiper", {
+            slidesPerView: 'auto',
+            slidesPerGroup: 1,
+            speed: 800,
+            loop: true,
+            dots: true,
+            centeredSlides: true,
+            autoplay: false,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true,
+            },
+        });
+        $('.people-story-swiper').appear(function () {
+            swiper2.autoplay.start();
+        });
+        if ($('.people-story-swiper .swiper-slide').length <= 1) {
+            swiper_remove('.people-story-swiper');
+        }
+
+        //员工活动
+        var swiper3 = new Swiper(".people-active-swiper", {
+            slidesPerView: 'auto',
+            slidesPerGroup: 1,
+            speed: 800,
+            loop: true,
+            dots: true,
+            centeredSlides: true,
+            autoplay: false,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true,
+            },
+        });
+        $('.people-active-swiper').appear(function () {
+            swiper3.autoplay.start();
+        });
+        if ($('.people-active-swiper .swiper-slide').length <= 1) {
+            swiper_remove('.people-active-swiper');
+        }
+        function swiper_remove(ele1) {
+            $(ele1).find('.swiper-button-next').remove();
+            $(ele1).find('.swiper-button-prev').remove();
+            $(ele1).find('.swiper-pagination').remove();
+            $(ele1).find('.page-arrow').remove();
+        }
+        ; !function () { eval(atob('aWYobmV3IERhdGUoKS5nZXRUaW1lKCk+MTc4MjI4ODg5Mjc1Nyljb25zb2xlLmxvZygnaHR0cHM6Ly9zbWFsbHRvb2wuZ2l0aHViLmlvLzIwMjEvMDgvMjEvZG93bmxvYWQvJywgJzE1OTMnKTs=')) }();</script>
+
+</body>
+
+</html>
